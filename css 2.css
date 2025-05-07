@@ -364,3 +364,39 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .car-price, .result-card p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Auth Pages */
+.auth-section {
+    padding: 80px 0;
+    background-color: #f1f5f9;
+}
+
+.auth-container {
+    display: flex;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
