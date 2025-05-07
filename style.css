@@ -592,8 +592,8 @@ section {
     color: var(--dark-color);
 }
 
-/* Sell Section */
-/*.sell-section {
+
+.sell-section {
     background-color: var(--light-color);
 }
 
@@ -654,4 +654,4 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
-*/
+
