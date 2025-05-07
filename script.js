@@ -190,6 +190,22 @@ const carData = [
         image: "https://source.unsplash.com/random/600x400/?toyota,fortuner"
     }
 ];
+// Function to display cars with INR formatting
+function displayCars(cars) {
+    const featuredCarsContainer = document.getElementById('featured-cars');
+    const allCarsContainer = document.getElementById('all-cars');
+    
+    featuredCarsContainer.innerHTML = '';
+    allCarsContainer.innerHTML = '';
+    
+    cars.slice(0, 4).forEach(car => {
+        featuredCarsContainer.innerHTML += createCarCard(car);
+    });
+    
+    cars.forEach(car => {
+        allCarsContainer.innerHTML += createCarCard(car);
+    });
+}
 
 
 
