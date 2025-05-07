@@ -69,3 +69,101 @@
             </div>
         </div>
     </section>
+<!-- Buy Cars Section with Filters -->
+    <section id="buy" class="buy-section">
+        <div class="container">
+            <h2 class="section-title">Browse Cars</h2>
+            <div class="filter-section">
+                <div class="filter-sidebar">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Price Range ($)</h4>
+                        <div class="price-range">
+                            <input type="range" id="price-min" min="0" max="100000" value="0">
+                            <input type="range" id="price-max" min="0" max="100000" value="50000">
+                        </div>
+                        <div class="price-values">
+                            <span id="min-price-value">0</span>
+                            <span>-</span>
+                            <span id="max-price-value">50000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Brand</h4>
+                        <select id="brand-filter">
+                            <option value="">All Brands</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Ford">Ford</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Audi">Audi</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Body Type</h4>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="body-type" value="SUV"> SUV</label>
+                            <label><input type="checkbox" name="body-type" value="Sedan"> Sedan</label>
+                            <label><input type="checkbox" name="body-type" value="Hatchback"> Hatchback</label>
+                            <label><input type="checkbox" name="body-type" value="Coupe"> Coupe</label>
+                            <label><input type="checkbox" name="body-type" value="Convertible"> Convertible</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Year</h4>
+                        <div class="year-range">
+                            <input type="number" id="year-min" placeholder="Min" min="1990" max="2023">
+                            <span>to</span>
+                            <input type="number" id="year-max" placeholder="Max" min="1990" max="2023">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Mileage (miles)</h4>
+                        <input type="number" id="mileage-max" placeholder="Max mileage">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Fuel Type</h4>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="fuel-type" value="Gasoline"> Gasoline</label>
+                            <label><input type="checkbox" name="fuel-type" value="Diesel"> Diesel</label>
+                            <label><input type="checkbox" name="fuel-type" value="Electric"> Electric</label>
+                            <label><input type="checkbox" name="fuel-type" value="Hybrid"> Hybrid</label>
+                        </div>
+                    </div>
+                    
+                    <button id="apply-filters" class="btn btn-primary">Apply Filters</button>
+                    <button id="reset-filters" class="btn btn-outline">Reset</button>
+                </div>
+                
+                <div class="cars-list">
+                    <div class="sort-options">
+                        <span>Sort by:</span>
+                        <select id="sort-by">
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="year-desc">Newest First</option>
+                            <option value="year-asc">Oldest First</option>
+                            <option value="mileage-asc">Mileage: Low to High</option>
+                        </select>
+                    </div>
+                    
+                    <div class="cars-grid" id="all-cars">
+                        <!-- Cars will be loaded via JavaScript -->
+                    </div>
+                    
+                    <div class="pagination">
+                        <button class="btn btn-outline"><i class="fas fa-chevron-left"></i> Previous</button>
+                        <span>Page 1 of 5</span>
+                        <button class="btn btn-outline">Next <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
