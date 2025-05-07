@@ -85,6 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('total-interest').textContent = formatINR(totalInterest);
             document.getElementById('total-payment').textContent = formatINR(totalPayment);
             
+// Update chart
+            emiChart.data.datasets[0].data = [principal, totalInterest];
+            emiChart.update();
+        }
+    }
 
 
             
