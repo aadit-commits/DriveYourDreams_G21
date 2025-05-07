@@ -27,6 +27,45 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+    // Sync range sliders with number inputs
+    const loanAmountInput = document.getElementById('loan-amount');
+    const loanAmountRange = document.getElementById('loan-amount-range');
+    const interestRateInput = document.getElementById('interest-rate');
+    const interestRateRange = document.getElementById('interest-rate-range');
+    const loanTermInput = document.getElementById('loan-term');
+    const loanTermRange = document.getElementById('loan-term-range');
+
+    loanAmountRange.addEventListener('input', function() {
+        loanAmountInput.value = this.value;
+        calculateEMI();
+    });
+
+    loanAmountInput.addEventListener('input', function() {
+        loanAmountRange.value = this.value;
+        calculateEMI();
+    });
+
+    interestRateRange.addEventListener('input', function() {
+        interestRateInput.value = this.value;
+        calculateEMI();
+    });
+
+    interestRateInput.addEventListener('input', function() {
+        interestRateRange.value = this.value;
+        calculateEMI();
+    });
+
+    loanTermRange.addEventListener('input', function() {
+        loanTermInput.value = this.value;
+        calculateEMI();
+    });
+
+    loanTermInput.addEventListener('input', function() {
+        loanTermRange.value = this.value;
+        calculateEMI();
+    });
+
+
 
 
    
