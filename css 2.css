@@ -633,3 +633,32 @@
     display: flex;
     gap: 15px;
 }
+
+/* Responsive Auth Pages */
+@media screen and (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+    
+    .auth-image {
+        display: none;
+    }
+    
+    .auth-form {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .car-detail-container {
+        flex-direction: column;
+    }
+    
+    .car-detail-actions {
+        flex-direction: column;
+    }
+    
+    .car-detail-actions .btn {
+        width: 100%;
+    }
+}
