@@ -206,7 +206,34 @@ function displayCars(cars) {
         allCarsContainer.innerHTML += createCarCard(car);
     });
 }
+// Function to create car card HTML with INR formatting
+function createCarCard(car) {
+    // Format price in Indian numbering system
+    const formattedPrice = new Intl.NumberFormat('en-IN', {
+        style: 'currency',
+        currency: 'INR',
+        maximumFractionDigits: 0
+    }).format(car.price).replace('₹', '₹ ');
+    
+    return `
+        <div class="car-card">
+            <div class="car-image" style="background-image: url('${car.image}')"></div>
+            <div class="car-details">
+                <h3 class="car-title">${car.year} ${car.make} ${car.model}</h3>
+                <div class="car-specs">
+                    <span><i class="fas fa-tachometer-alt"></i> ${car.mileage.toLocaleString('en-IN')} km</span>
+                    <span><i class="fas fa-gas-pump"></i> ${car.fuelType}</span>
+                    <span><i class="fas fa-car"></i> ${car.transmission}</span>
+                </div>
+                <div class="car-price">${formattedPrice}</div>
+                <button class="btn btn-outline view-details">View Details</button>
+            </div>
+        </div>
+    `;
+}
 
+// Initialize car display
+displayCars(carData);
 
 
 
