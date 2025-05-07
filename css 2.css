@@ -446,3 +446,43 @@
     color: var(--primary-color);
     text-decoration: none;
 }
+
+.auth-alt {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--dark-color);
+}
+
+.auth-alt a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-login p {
+    color: var(--gray-color);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
