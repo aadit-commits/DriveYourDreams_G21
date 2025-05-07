@@ -597,3 +597,39 @@
     margin-bottom: 15px;
     color: var(--dark-color);
 }
+
+.car-detail-price {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.car-detail-specs {
+    margin-bottom: 30px;
+}
+
+.car-detail-spec {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.car-detail-spec-label {
+    font-weight: 600;
+    width: 150px;
+    color: var(--dark-color);
+}
+
+.car-detail-spec-value {
+    color: var(--gray-color);
+}
+
+.car-detail-description {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.car-detail-actions {
+    display: flex;
+    gap: 15px;
+}
