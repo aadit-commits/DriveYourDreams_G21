@@ -1,0 +1,36 @@
+.tips-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.tips-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    color: var(--dark-color);
+}
+
+.tips-list i {
+    color: var(--success-color);
+    margin-right: 10px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.safety-tips {
+    background-color: #fff7ed;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.safety-tips h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.safety-tips p {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
