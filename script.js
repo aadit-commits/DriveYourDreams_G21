@@ -115,6 +115,83 @@ document.addEventListener('DOMContentLoaded', function() {
      // Calculate on page load
     calculateEMI();
 });
+// Car Data with Proper Images and INR Prices
+const carData = [
+    {
+        id: 1,
+        make: "Maruti Suzuki",
+        model: "Swift",
+        year: 2022,
+        price: 650000,
+        mileage: 12500,
+        fuelType: "Petrol",
+        transmission: "Manual",
+        bodyType: "Hatchback",
+        image: "https://source.unsplash.com/random/600x400/?maruti,swift"
+    },
+    {
+        id: 2,
+        make: "Hyundai",
+        model: "Creta",
+        year: 2021,
+        price: 1250000,
+        mileage: 18500,
+        fuelType: "Diesel",
+        transmission: "Automatic",
+        bodyType: "SUV",
+        image: "https://source.unsplash.com/random/600x400/?hyundai,creta"
+    },
+    {
+        id: 3,
+        make: "Tata",
+        model: "Nexon",
+        year: 2022,
+        price: 950000,
+        mileage: 15000,
+        fuelType: "Petrol",
+        transmission: "Automatic",
+        bodyType: "SUV",
+        image: "https://source.unsplash.com/random/600x400/?tata,nexon"
+    },
+    {
+        id: 4,
+        make: "Mahindra",
+        model: "Thar",
+        year: 2023,
+        price: 1500000,
+        mileage: 5000,
+        fuelType: "Diesel",
+        transmission: "Manual",
+        bodyType: "SUV",
+        image: "https://source.unsplash.com/random/600x400/?mahindra,thar"
+    },
+    {
+        id: 5,
+        make: "Kia",
+        model: "Seltos",
+        year: 2022,
+        price: 1350000,
+        mileage: 12000,
+        fuelType: "Petrol",
+        transmission: "Automatic",
+        bodyType: "SUV",
+        image: "https://source.unsplash.com/random/600x400/?kia,seltos"
+    },
+    {
+        id: 6,
+        make: "Toyota",
+        model: "Fortuner",
+        year: 2023,
+        price: 3800000,
+        mileage: 8000,
+        fuelType: "Diesel",
+        transmission: "Automatic",
+        bodyType: "SUV",
+        image: "https://source.unsplash.com/random/600x400/?toyota,fortuner"
+    }
+];
+
+
 
 
 
