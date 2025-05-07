@@ -112,6 +112,10 @@ document.addEventListener('DOMContentLoaded', function() {
         emiChart.data.datasets[0].data = [0, 0];
         emiChart.update();
     });
+     // Calculate on page load
+    calculateEMI();
+});
+
 
 
 
