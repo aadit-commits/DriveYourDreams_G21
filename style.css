@@ -460,8 +460,8 @@ section {
     color: var(--dark-color);
 }
 
-/* EMI Calculator */
-/*.emi-calculator {
+
+.emi-calculator {
     background-color: var(--light-color);
 }
 
@@ -591,7 +591,7 @@ section {
     text-align: center;
     color: var(--dark-color);
 }
-*/
+
 /* Sell Section */
 /*.sell-section {
     background-color: var(--light-color);
