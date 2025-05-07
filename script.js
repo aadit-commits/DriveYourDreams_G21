@@ -71,6 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const loanTerm = parseFloat(loanTermInput.value);
         
         if (principal && interestRate && loanTerm) {
+             // EMI calculation formula: [P x R x (1+R)^N]/[(1+R)^N-1]
+            const emi = principal * interestRate * Math.pow(1 + interestRate, loanTerm) / (Math.pow(1 + interestRate, loanTerm) - 1);
+            const totalPayment = emi * loanTerm;
+            const totalInterest = totalPayment - principal;
+
             
     
 
