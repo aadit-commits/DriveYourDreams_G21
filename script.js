@@ -75,6 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const emi = principal * interestRate * Math.pow(1 + interestRate, loanTerm) / (Math.pow(1 + interestRate, loanTerm) - 1);
             const totalPayment = emi * loanTerm;
             const totalInterest = totalPayment - principal;
+              // Update results with INR formatting
+            document.getElementById('monthly-payment').textContent = formatINR(emi);
+            document.getElementById('total-interest').textContent = formatINR(totalInterest);
+            document.getElementById('total-payment').textContent = formatINR(totalPayment);
+            
+  // Update results with INR formatting
+            document.getElementById('monthly-payment').textContent = formatINR(emi);
+            document.getElementById('total-interest').textContent = formatINR(totalInterest);
+            document.getElementById('total-payment').textContent = formatINR(totalPayment);
+            
+
 
             
     
