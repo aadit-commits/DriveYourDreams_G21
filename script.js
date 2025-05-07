@@ -64,6 +64,35 @@ document.addEventListener('DOMContentLoaded', function() {
         loanTermRange.value = this.value;
         calculateEMI();
     });
+     // Calculate EMI function
+    function calculateEMI() {
+        const principal = parseFloat(loanAmountInput.value);
+        const interestRate = parseFloat(interestRateInput.value) / 100 / 12; // Monthly interest rate
+        const loanTerm = parseFloat(loanTermInput.value);
+        
+        if (principal && interestRate && loanTerm) {
+            // EMI calculation formula: [P x R x (1+R)^N]/[(1+R)^N-1]
+            const emi = principal * interestRate * Math.pow(1 + interestRate, loanTerm) / (Math.pow(1 + interestRate, loanTerm) - 1);
+            const totalPayment = emi * loanTerm;
+            const totalInterest = totalPayment - principal;
+            
+            // Update results with INR formatting
+            document.getElementById('monthly-payment').textContent = formatINR(emi);
+            document.getElementById('total-interest').textContent = formatINR(totalInterest);
+            document.getElementById('total-payment').textContent = formatINR(totalPayment);
+            
+            // Update chart
+            emiChart.data.datasets[0].data = [principal, totalInterest];
+            emiChart.update();
+        }
+    }
+
+    // Calculate on button click
+    document.getElementById('calculate-emi').addEventListener('click', function(e) {
+        e.preventDefault();
+        calculateEMI();
+    });
+
 
 
 
