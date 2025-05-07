@@ -566,3 +566,34 @@
     border-radius: var(--border-radius);
     margin-bottom: 15px;
 }
+
+.car-detail-thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.car-detail-thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.car-detail-thumbnail:hover,
+.car-detail-thumbnail.active {
+    opacity: 1;
+    border: 2px solid var(--primary-color);
+}
+
+.car-detail-info {
+    flex: 1;
+}
+
+.car-detail-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
