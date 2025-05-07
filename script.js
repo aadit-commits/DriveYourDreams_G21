@@ -90,6 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
             emiChart.update();
         }
     }
+ // Calculate on button click
+    document.getElementById('calculate-emi').addEventListener('click', function(e) {
+        e.preventDefault();
+        calculateEMI();
+    });
 
 
             
