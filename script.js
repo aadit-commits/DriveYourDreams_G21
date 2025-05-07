@@ -95,6 +95,24 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         calculateEMI();
     });
+    // Reset calculator
+    document.getElementById('reset-calculator').addEventListener('click', function(e) {
+        e.preventDefault();
+        loanAmountInput.value = '500000';
+        loanAmountRange.value = '500000';
+        interestRateInput.value = '8.5';
+        interestRateRange.value = '8.5';
+        loanTermInput.value = '60';
+        loanTermRange.value = '60';
+        
+        document.getElementById('monthly-payment').textContent = '₹0.00';
+        document.getElementById('total-interest').textContent = '₹0.00';
+        document.getElementById('total-payment').textContent = '₹0.00';
+        
+        emiChart.data.datasets[0].data = [0, 0];
+        emiChart.update();
+    });
+
 
 
             
