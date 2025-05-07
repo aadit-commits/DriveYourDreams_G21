@@ -92,7 +92,7 @@ section {
     transform: translateY(-2px);
 }
 
-/*.header {
+.header {
     background-color: white;
     box-shadow: var(--box-shadow);
     position: sticky;
@@ -168,7 +168,6 @@ section {
     cursor: pointer;
     color: var(--dark-color);
 }
-*/
 /* Hero Section */
 /*.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1600x900/?car,showroom');
