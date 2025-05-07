@@ -25,10 +25,10 @@
 
 | Name            | Roll Number   | Role           |
 |-----------------|---------------|----------------|
-| Aadit Sarhadi   | 2410990002    | Developer      |
-| Aryan           | 2410990057    | UI/UX Designer |
-| Divyansh Verma  | 2410990068    | Backend Lead   |
-| Prabhu Bansal   | 2410990071    | Project Manager|
+| Aadit Sarhadi   | 2410990002    | HTML           |
+| Aryan           | 2410990057    | CSS            |
+| Divyansh Verma  | 2410990068    | JAVASCRIPT     |
+| Prabhu Bansal   | 2410990071    | CSS            |
 
 ---
 
