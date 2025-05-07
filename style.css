@@ -47,7 +47,7 @@ section {
     position: relative;
 }
 
-/*.section-title::after {
+.section-title::after {
     content: '';
     display: block;
     width: 80px;
@@ -91,7 +91,7 @@ section {
     color: white;
     transform: translateY(-2px);
 }
-*/
+
 /* Header Styles */
 /*.header {
     background-color: white;
