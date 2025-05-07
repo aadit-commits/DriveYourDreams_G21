@@ -168,7 +168,7 @@ section {
     cursor: pointer;
     color: var(--dark-color);
 }
-/*.hero {
+.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1600x900/?car,showroom');
     background-size: cover;
     background-position: center;
@@ -235,7 +235,6 @@ section {
 .search-box i {
     margin-right: 8px;
 }
-*/
 /* Cars Grid */
 /*.cars-grid {
     display: grid;
