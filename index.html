@@ -167,3 +167,61 @@
             </div>
         </div>
     </section>
+    <!-- Update the EMI Calculator section -->
+<section id="calculator" class="emi-calculator">
+    <div class="container">
+        <h2 class="section-title">EMI Calculator</h2>
+        <div class="calculator-container">
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="loan-amount">Loan Amount (₹)</label>
+                    <input type="number" id="loan-amount" placeholder="e.g. 5,00,000" min="50000" max="10000000" value="500000">
+                    <div class="range-slider">
+                        <input type="range" min="50000" max="5000000" value="500000" step="10000" class="slider" id="loan-amount-range">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interest-rate">Interest Rate (%)</label>
+                    <input type="number" id="interest-rate" placeholder="e.g. 8.5" step="0.1" min="6" max="20" value="8.5">
+                    <div class="range-slider">
+                        <input type="range" min="6" max="20" value="8.5" step="0.1" class="slider" id="interest-rate-range">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loan-term">Loan Term (months)</label>
+                    <input type="number" id="loan-term" placeholder="e.g. 60" min="12" max="84" value="60">
+                    <div class="range-slider">
+                        <input type="range" min="12" max="84" value="60" step="1" class="slider" id="loan-term-range">
+                    </div>
+                </div>
+                
+                <button id="calculate-emi" class="btn btn-primary">Calculate EMI</button>
+                <button id="reset-calculator" class="btn btn-outline">Reset</button>
+            </div>
+            
+            <div class="calculator-results">
+                <div class="result-card">
+                    <h3>Monthly Payment</h3>
+                    <p id="monthly-payment">₹0.00</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Total Interest</h3>
+                    <p id="total-interest">₹0.00</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Total Payment</h3>
+                    <p id="total-payment">₹0.00</p>
+                </div>
+                
+                <div class="amortization-chart">
+                    <h3>Payment Breakdown</h3>
+                    <canvas id="emi-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
